@@ -24,6 +24,4 @@ $(TARGET): $(OBJ)
 
 # Clean up
 clean:
-	rm -f $(OBJ) $(TARGET)
-
-.PHONY: all clean
+	del /F $(OBJ) $(TARGET) *.exe 
