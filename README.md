@@ -25,20 +25,6 @@ The project uses two main classes:
    - Iteratively sample the next character using `RandomGenerator` according to the learned probabilities.
    - Slide the k-gram window by one character and repeat until the desired output length is reached.
 
----
-
-# Project Structure
-
-Lab_5/
-|__ src/
-│ |__main.cpp # Command-line interface
-│ |__ slm.h # SLM class declaration
-│ |__ slm.cpp # SLM class implementation
-│ |__ rng.h # RandomGenerator class declaration
-│ |__ rng.cpp # RandomGenerator implementation
-│ |__ Makefile # Build instructions
-|__ README.md # This file
-
 ---------------------------------------------------------------------------------------------------------------------
 
 # Compilation
@@ -55,15 +41,15 @@ make clean
 
 # Usage
 
-./slm <k> <filename> <length> 
+./slm k filename length
 
 Arguments:
 
-<k> – Length of k-gram (integer > 0)
+k – Length of k-gram (integer > 0)
 
-<filename> – Text file to train the model on
+filename – Text file to train the model on
 
-<length> – Number of characters to generate 
+length – Number of characters to generate 
 
 ---------------------------------------------------------------------------------------------------------------------
 
@@ -72,4 +58,3 @@ Arguments:
 -C++17 or later
 
 -Unix environment
-
